@@ -1,0 +1,22 @@
+
+Evaluation:
+[MyImage x2]	PSNR: 0.000 (Best: 0.000 @epoch 1)
+Total time: 3.46s, ave time: 0.69s
+
+
+Evaluation:
+[MyImage x2]	PSNR: 0.000 (Best: 0.000 @epoch 1)
+Total time: 3.30s, ave time: 0.66s
+
+
+Evaluation:
+[MyImage x2]	PSNR: 0.000 (Best: 0.000 @epoch 1)
+Total time: 975.43s, ave time: 1.54s
+
+
+Evaluation:
+
+Evaluation:
+[MyImage x2]	PSNR: 0.000 (Best: 0.000 @epoch 1)
+Total time: 987.76s, ave time: 1.56s
+
