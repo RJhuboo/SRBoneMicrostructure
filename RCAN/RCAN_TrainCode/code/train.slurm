@@ -18,4 +18,4 @@ conda deactivate			# desactiver les environnements herites par defaut
 module load pytorch-gpu/py3/1.5.0	# charger les modules
 
 set -x				
-srun python main.py --model RCAN --save RCAN_MOUSE --scale 2 --n_resgroups 10 --n_resblocks 30 --n_feats 64 --reset --chop --save_results --print_model --patch_size 16 --dir_data /gpfsstore/rech/tvs/uki75tv/ --data_train MOUSE --data_test MOUSE --n_train 17752 --n_val 4438 --offset_val 17752 --ext img --epochs 20 --n_colors 1 --n_GPUs 42  
+srun python main.py --model RCAN --save RCAN_MOUSE --scale 2 --n_resgroups 10 --n_resblocks 30 --n_feats 64 --reset --chop --save_results --print_model --patch_size 16 --dir_data /gpfsstore/rech/tvs/uki75tv/ --data_train MOUSE --data_test MOUSE --n_train 17752 --n_val 4438 --offset_val 17752 --ext img --epochs 20 --n_colors 1  
