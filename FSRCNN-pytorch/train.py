@@ -16,9 +16,9 @@ from utils import AverageMeter, calc_psnr
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--train-file', type=str,default = "/home/jhr11385/TRAININGBASE.h5")
-    parser.add_argument('--eval-file', type=str,default = "/home/jhr11385/TESTINGBASE.h5")
-    parser.add_argument('--outputs-dir', type=str, default = "/home/jhr11385/FSRCNN-output")
+    parser.add_argument('--train-file', type=str,default = "../TRAININGBASE.h5")
+    parser.add_argument('--eval-file', type=str,default = "../TESTINGBASE.h5")
+    parser.add_argument('--outputs-dir', type=str, default = "../FSRCNN-output")
     parser.add_argument('--weights-file', type=str)
     parser.add_argument('--scale', type=int, default=2)
     parser.add_argument('--lr', type=float, default=1e-3)
