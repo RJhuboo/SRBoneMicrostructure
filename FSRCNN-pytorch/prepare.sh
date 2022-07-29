@@ -1,14 +1,8 @@
-#!/bin/bash
-#SBATCH -N 1
-#SBATCH -n 1
-#SBATCH -c 1
-#SBATCH --mem=30G
-#SBATCH -p GPU
-#SBATCH --gres=gpu:gtxp:1
-#SBATCH -t 3-0   # 3-0 (3 jours)
-#SBATCH -o FSRCNN_prepare.out
-#SBATCH -J prepare
+# TRAINING DATA
 
-source /home_expes/tools/python/Python-3.7.1-ubuntu_gpu/bin/activate
+python ./prepare.py --image-dir ../datasets/MOUSE/LR/Train --label-dir ../datasets/MOUSE/HR/Train --output-path ../TRAININGBASE.h5 
 
-srun python /home/jhr11385/FSRCNN-pytorch/prepare.py
+# TESTING DATA
+
+python ./prepare.py --image-dir ../datasets/MOUSE/LR/Test --label-dir ../datasets/MOUSE/HR/Test --output-path ../TESTINGBASE.h5 --eval True
+
