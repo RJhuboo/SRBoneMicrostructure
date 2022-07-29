@@ -28,7 +28,7 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=123)
     args = parser.parse_args()
 
-    args.outputs_dir = os.path.join(args.outputs_dir, 'MOUSE_big_data_x{}'.format(args.scale))
+    args.outputs_dir = os.path.join(args.outputs_dir, 'MOUSE_FSRCNN_x{}'.format(args.scale))
 
     if not os.path.exists(args.outputs_dir):
         os.makedirs(args.outputs_dir)
