@@ -45,9 +45,7 @@ class MOUSE(srdata.SRData):
                     np.save(name_sep, hr)
                 #for si, s in enumerate(self.scale):
                 for v in self.images_lr:
-                    print("faute :", v)
                     lr = misc.imread(v)
-                    print("on arrive pas ici ? ")
                     name_sep = v.replace(self.ext, '.npy')
                     np.save(name_sep, lr)
 
